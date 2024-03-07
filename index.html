@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idle Human Population Tycoon</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Ensure you have a style.css file -->
 </head>
 <body>
-<div id="gameContainer">
-    <h2>Idle Human Population Tycoon</h2>
-    <div id="resources">
-        <p>Gold: <span id="goldCount">0</span></p>
-        <p>Food: <span id="foodCount">50</span></p> <!-- Starting with some food -->
-        <p>Ore: <span id="oreCount">0</span></p>
-        <p>Population: <span id="populationCount">0</span></p>
-        <p>Farmers: <span id="farmerCount">0</span></p>
-        <p>Miners: <span id="minerCount">0</span></p>
+    <div id="gameContainer">
+        <h1>Idle Human Population Tycoon</h1>
+        
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Gold: <span id="gold">100</span></p>
+            <p>Wood: <span id="wood">50</span></p>
+            <p>Food: <span id="food">100</span></p>
+            <p>Stone: <span id="stone">0</span></p>
+            <p>Ore: <span id="ore">0</span></p>
+            <p>Research Points: <span id="researchPoints">0</span></p>
+        </section>
+        
+        <section id="population">
+            <h2>Population</h2>
+            <p>Total: <span id="populationTotal">0</span></p>
+            <p>Available: <span id="populationAvailable">0</span></p>
+        </section>
+        
+        <section id="jobs">
+            <h2>Jobs</h2>
+            <button id="addFarmer">Add Farmer</button>
+            <p>Farmers: <span id="farmers">0</span></p>
+            <button id="addMiner">Add Miner</button>
+            <p>Miners: <span id="miners">0</span></p>
+        </section>
+        
+        <section id="buildings">
+            <h2>Buildings</h2>
+            <button id="buildFarm">Build Farm</button>
+            <p>Farms: <span id="farms">0</span></p>
+            <button id="buildMine">Build Mine</button>
+            <p>Mines: <span id="mines">0</span></p>
+        </section>
+        
+        <section id="environment">
+            <h2>Environment</h2>
+            <p>Health: <span id="environmentHealth">100</span>%</p>
+        </section>
     </div>
-    <button id="buyPerson">Buy Person (10 Food)</button>
-    <button id="assignFarmer">Assign Farmer</button>
-    <button id="assignMiner">Assign Miner</button>
-    <div id="market">
-        <h3>Market</h3>
-        <button id="buyOre">Buy Ore (20 Gold)</button>
-    </div>
-</div>
-<script src="script.js"></script>
+    
+    <script src="script.js"></script> <!-- Ensure your JavaScript file is correctly linked -->
 </body>
 </html>
